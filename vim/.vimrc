@@ -1,34 +1,6 @@
 set nocompatible                  " Must come first because it changes other options.
 filetype off         " Turn on file type detection.
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-bundler'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'fatih/vim-go'
-Plugin 'mileszs/ack.vim'
-Plugin 'elzr/vim-json'
-Plugin 'wincent/command-t'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-clojure-highlight'
-"Plugin 'altercation/vim-colors-solarized'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'majutsushi/tagbar'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'elixir-lang/vim-elixir'
-call vundle#end()
-
 filetype plugin indent on         " Turn on file type detection.
 
 set shell=/bin/bash
