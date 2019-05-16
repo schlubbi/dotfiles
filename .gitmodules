@@ -1,0 +1,54 @@
+[submodule "vim/pack/schlubbi/start/ack.vim"]
+	path = vim/pack/schlubbi/start/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/pack/schlubbi/start/vim-fugitive"]
+	path = vim/pack/schlubbi/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/pack/schlubbi/start/vim-endwise"]
+	path = vim/pack/schlubbi/start/vim-endwise
+	url = https://github.com/tpope/vim-endwise
+[submodule "vim/pack/schlubbi/start/vim-rails"]
+	path = vim/pack/schlubbi/start/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "vim/pack/schlubbi/start/vim-bundler"]
+	path = vim/pack/schlubbi/start/vim-bundler
+	url = https://github.com/tpope/vim-bundler
+[submodule "vim/pack/schlubbi/start/vim-scala"]
+	path = vim/pack/schlubbi/start/vim-scala
+	url = https://github.com/derekwyatt/vim-scala
+[submodule "vim/pack/schlubbi/start/vim-go"]
+	path = vim/pack/schlubbi/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "vim/pack/schlubbi/start/vim-json"]
+	path = vim/pack/schlubbi/start/vim-json
+	url = https://github.com/elzr/vim-json
+[submodule "vim/pack/schlubbi/start/vim-ruby"]
+	path = vim/pack/schlubbi/start/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby
+[submodule "vim/pack/schlubbi/start/nerdtree"]
+	path = vim/pack/schlubbi/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "vim/pack/schlubbi/start/vim-repeat"]
+	path = vim/pack/schlubbi/start/vim-repeat
+	url = https://github.com/tpope/vim-repeat
+[submodule "vim/pack/schlubbi/start/syntastic"]
+	path = vim/pack/schlubbi/start/syntastic
+	url = https://github.com/scrooloose/syntastic
+[submodule "vim/pack/schlubbi/start/vim-surround"]
+	path = vim/pack/schlubbi/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "vim/pack/schlubbi/start/rainbow_parentheses.vim"]
+	path = vim/pack/schlubbi/start/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "vim/pack/schlubbi/start/vim-clojure-static"]
+	path = vim/pack/schlubbi/start/vim-clojure-static
+	url = https://github.com/guns/vim-clojure-static
+[submodule "vim/pack/schlubbi/start/vim-clojure-highlight"]
+	path = vim/pack/schlubbi/start/vim-clojure-highlight
+	url = https://github.com/guns/vim-clojure-highlight
+[submodule "vim/pack/schlubbi/start/vim-elixir"]
+	path = vim/pack/schlubbi/start/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
+[submodule "vim/pack/schlubbi/start/vim-unimpaired"]
+	path = vim/pack/schlubbi/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired
