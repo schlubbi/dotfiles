@@ -1,6 +1,7 @@
 set nocompatible                  " Must come first because it changes other options.
 filetype off         " Turn on file type detection.
 
+set rtp+=/usr/local/opt/fzf
 filetype plugin indent on         " Turn on file type detection.
 
 set shell=/bin/bash
@@ -101,7 +102,7 @@ set laststatus=2
 
 let g:go_fmt_command = "goimports"
 nmap <F8> :TagbarToggle<CR>
-
+:nnoremap <leader>t :FZF<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Clojure Support
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
