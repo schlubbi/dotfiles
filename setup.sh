@@ -1,3 +1,2 @@
-defaults write NSGlobalDomain KeyRepeat -int 0
-defaults write NSGlobalDomain InitialKeyRepeat -int 16
-defaults write -g ApplePressAndHoldEnabled -bool false
+mkdir ~/.config/
+ln -s /workspaces/.codespaces/.persistedshare/dotfiles/nvim ~/.config/nvim
