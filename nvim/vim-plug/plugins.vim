@@ -8,10 +8,6 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-rbenv'
-  " Better Syntax Support
-  Plug 'sheerun/vim-polyglot'
-  " File Explorer
-  Plug 'scrooloose/NERDTree'
   " Auto pairs for '(' '[' '{'
   Plug 'jiangmiao/auto-pairs'
   " Stable version of coc
@@ -22,9 +18,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " fzf
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
-  Plug 'preservim/nerdtree'
   Plug 'vim-ruby/vim-ruby'
   Plug 'tpope/vim-endwise'
+  Plug 'mhinz/vim-signify'
   Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-rhubarb'
   Plug 'tpope/vim-rails'
@@ -32,7 +28,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'tpope/vim-commentary'
   Plug 'mileszs/ack.vim'
   if executable("rg")
-	  let g:ackprg = 'rg --vimgrep --no-heading'
+    let g:ackprg = 'rg --vimgrep --no-heading'
   endif
   Plug 'junegunn/rainbow_parentheses.vim'
   Plug 'ludovicchabant/vim-gutentags'
@@ -40,4 +36,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'majutsushi/tagbar'
   Plug 'liuchengxu/vim-which-key'
   Plug 'justinmk/vim-sneak'
+  Plug 'dense-analysis/ale'
+  Plug 'cocopon/iceberg.vim'
+  Plug 'sonph/onehalf', {'rtp': 'vim/'}
+  Plug 'fatih/vim-go'
+  Plug 'arcticicestudio/nord-vim'
+  Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+  Plug 'vim-scripts/xoria256.vim'
 call plug#end()
