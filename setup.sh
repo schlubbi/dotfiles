@@ -10,4 +10,4 @@ install_neovim
 
 mkdir ~/.config/
 ln -s /workspaces/.codespaces/.persistedshare/dotfiles/nvim ~/.config/nvim
-ln -s /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
+ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
