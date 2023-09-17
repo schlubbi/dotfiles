@@ -4,8 +4,14 @@ function install_neovim {
   curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.deb
   sudo dpkg -i nvim-linux64.deb
 }
-install_neovim
+
+
+function install_lazy_vim {
+  git clone https://github.com/LazyVim/starter ~/.config/nvim
+  rm -rf ~/.config/nvim/.git
+}
 
 mkdir ~/.config/
-ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/nvim ~/.config/nvim
+install_lazy_vim
+
 ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
