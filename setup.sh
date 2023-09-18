@@ -21,6 +21,7 @@ function install_fzf {
 mkdir -p ~/.config/
 
 if [[ -n "$CODESPACES" ]]; then
+  rbenv global $(rbenv versions --bare | head -n 1)
   install_fzf
   install_neovim
   ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
