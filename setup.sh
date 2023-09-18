@@ -1,9 +1,10 @@
 #!/usr/bin/env bash 
 
 function install_neovim {
-  curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.deb
-  sudo dpkg -i nvim-linux64.deb
-  gem install neovim
+  curl -LO https://github.  curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
+  tar xzvf nvim-linux64.tar.gz
+  sudo cp -r nvim-linux64/ /usr/local/
+  rm -rf nvim-linux64.tar.gz nvim-linux64
 }
 
 function install_node {
