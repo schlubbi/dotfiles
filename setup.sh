@@ -1,10 +1,8 @@
 #!/usr/bin/env bash 
 
 function install_neovim {
- curl -LO https://github.  curl -LO https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.tar.gz
- tar xzvf nvim-linux64.tar.gz
- sudo cp -r nvim-linux64/ /usr/local/
- rm -rf nvim-linux64.tar.gz nvim-linux64
+	curl -sSL https://github.com/neovim/neovim/releases/download/v0.9.1/nvim-linux64.tar.gz | tar xvzp --strip-components=1 -C "$HOME/.local/"
+	ln -sf "$HOME/.local/bin/nvim" "$HOME/bin/"
 }
 
 function install_node {
@@ -22,8 +20,10 @@ function install_fzf {
 
 mkdir -p ~/.config/
 
-install_node
-install_fzf
-install_neovim
-ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
-ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/nvim_new ~/.config/nvim
+if [[ -n "$CODESPACES" ]]; then
+	 sudo chsh -s /bin/zsh $(whoami)
+  install_fzf
+  install_neovim
+  ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
+  ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/nvim_new ~/.config/nvim
+fi
