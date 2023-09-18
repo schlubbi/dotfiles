@@ -21,7 +21,6 @@ function install_fzf {
 mkdir -p ~/.config/
 
 if [[ -n "$CODESPACES" ]]; then
-	 sudo chsh -s /bin/zsh $(whoami)
   install_fzf
   install_neovim
   ln -sf /workspaces/.codespaces/.persistedshare/dotfiles/.gitconfig ~/.gitconfig
